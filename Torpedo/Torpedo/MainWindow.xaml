@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torpedo"
         mc:Ignorable="d"
+        Background="#0F1C2E"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -24,157 +25,164 @@
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid x:Name="gPlayer"
-                  Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="10*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="10*"/>
-                </Grid.RowDefinitions>
-                <Grid x:Name="gPlayerField"
-                      Grid.Row="1"
-                      Grid.Column="1">
+            <Border BorderThickness="4"
+                    BorderBrush="#374357"
+                    CornerRadius="5"
+                    Grid.Column="1">
+                <Grid x:Name="gPlayer"
+                      Background="#374357"
+                      Margin="-1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="10*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
+                        <RowDefinition Height="10*"/>
                     </Grid.RowDefinitions>
+                    <Grid x:Name="gPlayerField"
+                          Grid.Row="1"
+                          Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                    <Label x:Name="lblPlayerStatus"
+                           Background="Red"/>
+                    <Grid x:Name="gPlayerNum"
+                          Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="1"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="2"
+                               Grid.Column="1"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="3"
+                               Grid.Column="2"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="4"
+                               Grid.Column="3"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="5"
+                               Grid.Column="4"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="6"
+                               Grid.Column="5"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="7"
+                               Grid.Column="6"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="8"
+                               Grid.Column="7"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="9"
+                               Grid.Column="8"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="10"
+                               Grid.Column="9"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                    </Grid>
+                    <Grid x:Name="gPlayerChar"
+                          Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Content="A"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="B"
+                               Grid.Row="1"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="C"
+                               Grid.Row="2"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="D"
+                               Grid.Row="3"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="E"
+                               Grid.Row="4"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="F"
+                               Grid.Row="5"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="G"
+                               Grid.Row="6"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="H"
+                               Grid.Row="7"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="I"
+                               Grid.Row="8"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                        <Label Content="J"
+                               Grid.Row="9"
+                               HorizontalContentAlignment="Center"
+                               VerticalContentAlignment="Center"/>
+                    </Grid>
                 </Grid>
-                <Label x:Name="lblPlayerStatus"
-                       Background="Red"/>
-                <Grid x:Name="gPlayerNum"
-                      Grid.Column="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Label Content="1"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="2"
-                           Grid.Column="1"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="3"
-                           Grid.Column="2"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="4"
-                           Grid.Column="3"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="5"
-                           Grid.Column="4"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="6"
-                           Grid.Column="5"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="7"
-                           Grid.Column="6"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="8"
-                           Grid.Column="7"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="9"
-                           Grid.Column="8"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="10"
-                           Grid.Column="9"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                </Grid>
-                <Grid x:Name="gPlayerChar"
-                      Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Label Content="A"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="B"
-                           Grid.Row="1"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="C"
-                           Grid.Row="2"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="D"
-                           Grid.Row="3"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="E"
-                           Grid.Row="4"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="F"
-                           Grid.Row="5"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="G"
-                           Grid.Row="6"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="H"
-                           Grid.Row="7"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="I"
-                           Grid.Row="8"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                    <Label Content="J"
-                           Grid.Row="9"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"/>
-                </Grid>
-            </Grid>
+            </Border>
             <Grid x:Name="gOpponent"
-                  Grid.Column="3">
+                  Grid.Column="3"
+                  Background="#374357">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="10*"/>
